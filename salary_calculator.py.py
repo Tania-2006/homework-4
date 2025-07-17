@@ -8,7 +8,7 @@ def total_salary(path):
                 line = line.strip()  # Видаляємо зайві пробіли та символи нових рядків
                 if line:  # Якщо рядок не порожній
                     name, salary = line.split(',')
-                    total += int(salary)  # Додаємо заробітну плату до загальної суми
+                    total += float(salary)  # Додаємо заробітну плату до загальної суми
                     count += 1  # Збільшуємо лічильник розробників
         
         if count == 0:
